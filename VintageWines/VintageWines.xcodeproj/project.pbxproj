@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A650C2D826F676EC003FE9B8 /* VintageWine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650C2D726F676EC003FE9B8 /* VintageWine.swift */; };
+		A650C2E126F69071003FE9B8 /* VintageWines.json in Resources */ = {isa = PBXBuildFile; fileRef = A650C2E026F69071003FE9B8 /* VintageWines.json */; };
+		A650C2E326F750F3003FE9B8 /* VintageViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A650C2E226F750F3003FE9B8 /* VintageViewModelTests.swift */; };
+		A6674F2B26F34FF600D15A78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F2A26F34FF600D15A78 /* AppDelegate.swift */; };
+		A6674F2D26F34FF600D15A78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F2C26F34FF600D15A78 /* SceneDelegate.swift */; };
+		A6674F2F26F34FF600D15A78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F2E26F34FF600D15A78 /* ViewController.swift */; };
+		A6674F3226F34FF600D15A78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6674F3026F34FF600D15A78 /* Main.storyboard */; };
+		A6674F3426F34FF700D15A78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6674F3326F34FF700D15A78 /* Assets.xcassets */; };
+		A6674F3726F34FF700D15A78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6674F3526F34FF700D15A78 /* LaunchScreen.storyboard */; };
+		A6674F4D26F34FF800D15A78 /* VintageWinesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F4C26F34FF800D15A78 /* VintageWinesUITests.swift */; };
+		A6674F5C26F3502D00D15A78 /* Networking in Frameworks */ = {isa = PBXBuildFile; productRef = A6674F5B26F3502D00D15A78 /* Networking */; };
+		A6674F5E26F3504A00D15A78 /* VintageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F5D26F3504A00D15A78 /* VintageViewModel.swift */; };
+		A6674F6026F3506A00D15A78 /* VintageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6674F5F26F3506A00D15A78 /* VintageService.swift */; };
+		A6A0248C26F363D1008868C6 /* VintageWineTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0248A26F363D1008868C6 /* VintageWineTableCell.swift */; };
+		A6A0248D26F363D1008868C6 /* VintageWineTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A0248B26F363D1008868C6 /* VintageWineTableCell.xib */; };
+		A6A0248F26F3EE28008868C6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0248E26F3EE27008868C6 /* Extensions.swift */; };
+		A6FE089126F61D6100D6F9D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FE089026F61D6100D6F9D5 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6674F3E26F34FF700D15A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6674F1F26F34FF600D15A78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6674F2626F34FF600D15A78;
+			remoteInfo = VintageWines;
+		};
+		A6674F4926F34FF800D15A78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6674F1F26F34FF600D15A78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6674F2626F34FF600D15A78;
+			remoteInfo = VintageWines;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A650C2D726F676EC003FE9B8 /* VintageWine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageWine.swift; sourceTree = "<group>"; };
+		A650C2E026F69071003FE9B8 /* VintageWines.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VintageWines.json; sourceTree = "<group>"; };
+		A650C2E226F750F3003FE9B8 /* VintageViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageViewModelTests.swift; sourceTree = "<group>"; };
+		A6674F2726F34FF600D15A78 /* VintageWines.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VintageWines.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6674F2A26F34FF600D15A78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6674F2C26F34FF600D15A78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A6674F2E26F34FF600D15A78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6674F3126F34FF600D15A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6674F3326F34FF700D15A78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6674F3626F34FF700D15A78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6674F3826F34FF700D15A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6674F3D26F34FF700D15A78 /* VintageWinesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VintageWinesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6674F4326F34FF700D15A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6674F4826F34FF800D15A78 /* VintageWinesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VintageWinesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6674F4C26F34FF800D15A78 /* VintageWinesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageWinesUITests.swift; sourceTree = "<group>"; };
+		A6674F4E26F34FF800D15A78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6674F5D26F3504A00D15A78 /* VintageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageViewModel.swift; sourceTree = "<group>"; };
+		A6674F5F26F3506A00D15A78 /* VintageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageService.swift; sourceTree = "<group>"; };
+		A6A0248A26F363D1008868C6 /* VintageWineTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageWineTableCell.swift; sourceTree = "<group>"; };
+		A6A0248B26F363D1008868C6 /* VintageWineTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VintageWineTableCell.xib; sourceTree = "<group>"; };
+		A6A0248E26F3EE27008868C6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A6FE089026F61D6100D6F9D5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6674F2426F34FF600D15A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6674F5C26F3502D00D15A78 /* Networking in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F3A26F34FF700D15A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F4526F34FF800D15A78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A650C2D226F6767F003FE9B8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F5D26F3504A00D15A78 /* VintageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A650C2D326F67688003FE9B8 /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F5F26F3506A00D15A78 /* VintageService.swift */,
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		A650C2D426F67694003FE9B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F2E26F34FF600D15A78 /* ViewController.swift */,
+				A6A0248A26F363D1008868C6 /* VintageWineTableCell.swift */,
+				A6A0248B26F363D1008868C6 /* VintageWineTableCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A650C2D526F676A7003FE9B8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A6A0248E26F3EE27008868C6 /* Extensions.swift */,
+				A6FE089026F61D6100D6F9D5 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A650C2D626F676B8003FE9B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F3026F34FF600D15A78 /* Main.storyboard */,
+				A6674F3326F34FF700D15A78 /* Assets.xcassets */,
+				A6674F3526F34FF700D15A78 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A650C2D926F67714003FE9B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A650C2D726F676EC003FE9B8 /* VintageWine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A6674F1E26F34FF600D15A78 = {
+			isa = PBXGroup;
+			children = (
+				A6674F2926F34FF600D15A78 /* VintageWines */,
+				A6674F4026F34FF700D15A78 /* VintageWinesTests */,
+				A6674F4B26F34FF800D15A78 /* VintageWinesUITests */,
+				A6674F2826F34FF600D15A78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6674F2826F34FF600D15A78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F2726F34FF600D15A78 /* VintageWines.app */,
+				A6674F3D26F34FF700D15A78 /* VintageWinesTests.xctest */,
+				A6674F4826F34FF800D15A78 /* VintageWinesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6674F2926F34FF600D15A78 /* VintageWines */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F2A26F34FF600D15A78 /* AppDelegate.swift */,
+				A6674F2C26F34FF600D15A78 /* SceneDelegate.swift */,
+				A650C2D926F67714003FE9B8 /* Model */,
+				A650C2D426F67694003FE9B8 /* Views */,
+				A650C2D226F6767F003FE9B8 /* ViewModel */,
+				A650C2D326F67688003FE9B8 /* API Service */,
+				A650C2D626F676B8003FE9B8 /* Resources */,
+				A650C2D526F676A7003FE9B8 /* Helpers */,
+				A6674F3826F34FF700D15A78 /* Info.plist */,
+			);
+			path = VintageWines;
+			sourceTree = "<group>";
+		};
+		A6674F4026F34FF700D15A78 /* VintageWinesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A650C2E026F69071003FE9B8 /* VintageWines.json */,
+				A650C2E226F750F3003FE9B8 /* VintageViewModelTests.swift */,
+				A6674F4326F34FF700D15A78 /* Info.plist */,
+			);
+			path = VintageWinesTests;
+			sourceTree = "<group>";
+		};
+		A6674F4B26F34FF800D15A78 /* VintageWinesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6674F4C26F34FF800D15A78 /* VintageWinesUITests.swift */,
+				A6674F4E26F34FF800D15A78 /* Info.plist */,
+			);
+			path = VintageWinesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6674F2626F34FF600D15A78 /* VintageWines */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6674F5126F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWines" */;
+			buildPhases = (
+				A6674F2326F34FF600D15A78 /* Sources */,
+				A6674F2426F34FF600D15A78 /* Frameworks */,
+				A6674F2526F34FF600D15A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VintageWines;
+			packageProductDependencies = (
+				A6674F5B26F3502D00D15A78 /* Networking */,
+			);
+			productName = VintageWines;
+			productReference = A6674F2726F34FF600D15A78 /* VintageWines.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6674F3C26F34FF700D15A78 /* VintageWinesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6674F5426F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWinesTests" */;
+			buildPhases = (
+				A6674F3926F34FF700D15A78 /* Sources */,
+				A6674F3A26F34FF700D15A78 /* Frameworks */,
+				A6674F3B26F34FF700D15A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6674F3F26F34FF700D15A78 /* PBXTargetDependency */,
+			);
+			name = VintageWinesTests;
+			productName = VintageWinesTests;
+			productReference = A6674F3D26F34FF700D15A78 /* VintageWinesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6674F4726F34FF800D15A78 /* VintageWinesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6674F5726F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWinesUITests" */;
+			buildPhases = (
+				A6674F4426F34FF800D15A78 /* Sources */,
+				A6674F4526F34FF800D15A78 /* Frameworks */,
+				A6674F4626F34FF800D15A78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6674F4A26F34FF800D15A78 /* PBXTargetDependency */,
+			);
+			name = VintageWinesUITests;
+			productName = VintageWinesUITests;
+			productReference = A6674F4826F34FF800D15A78 /* VintageWinesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6674F1F26F34FF600D15A78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					A6674F2626F34FF600D15A78 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A6674F3C26F34FF700D15A78 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A6674F2626F34FF600D15A78;
+					};
+					A6674F4726F34FF800D15A78 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A6674F2626F34FF600D15A78;
+					};
+				};
+			};
+			buildConfigurationList = A6674F2226F34FF600D15A78 /* Build configuration list for PBXProject "VintageWines" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6674F1E26F34FF600D15A78;
+			packageReferences = (
+				A6674F5A26F3502D00D15A78 /* XCRemoteSwiftPackageReference "Networking" */,
+			);
+			productRefGroup = A6674F2826F34FF600D15A78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6674F2626F34FF600D15A78 /* VintageWines */,
+				A6674F3C26F34FF700D15A78 /* VintageWinesTests */,
+				A6674F4726F34FF800D15A78 /* VintageWinesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6674F2526F34FF600D15A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6674F3726F34FF700D15A78 /* LaunchScreen.storyboard in Resources */,
+				A6674F3426F34FF700D15A78 /* Assets.xcassets in Resources */,
+				A6A0248D26F363D1008868C6 /* VintageWineTableCell.xib in Resources */,
+				A6674F3226F34FF600D15A78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F3B26F34FF700D15A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A650C2E126F69071003FE9B8 /* VintageWines.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F4626F34FF800D15A78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6674F2326F34FF600D15A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6674F2F26F34FF600D15A78 /* ViewController.swift in Sources */,
+				A6A0248F26F3EE28008868C6 /* Extensions.swift in Sources */,
+				A6674F2B26F34FF600D15A78 /* AppDelegate.swift in Sources */,
+				A6A0248C26F363D1008868C6 /* VintageWineTableCell.swift in Sources */,
+				A6674F2D26F34FF600D15A78 /* SceneDelegate.swift in Sources */,
+				A650C2D826F676EC003FE9B8 /* VintageWine.swift in Sources */,
+				A6674F6026F3506A00D15A78 /* VintageService.swift in Sources */,
+				A6674F5E26F3504A00D15A78 /* VintageViewModel.swift in Sources */,
+				A6FE089126F61D6100D6F9D5 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F3926F34FF700D15A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A650C2E326F750F3003FE9B8 /* VintageViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6674F4426F34FF800D15A78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6674F4D26F34FF800D15A78 /* VintageWinesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6674F3F26F34FF700D15A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6674F2626F34FF600D15A78 /* VintageWines */;
+			targetProxy = A6674F3E26F34FF700D15A78 /* PBXContainerItemProxy */;
+		};
+		A6674F4A26F34FF800D15A78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6674F2626F34FF600D15A78 /* VintageWines */;
+			targetProxy = A6674F4926F34FF800D15A78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6674F3026F34FF600D15A78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6674F3126F34FF600D15A78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6674F3526F34FF700D15A78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6674F3626F34FF700D15A78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6674F4F26F34FF800D15A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6674F5026F34FF800D15A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6674F5226F34FF800D15A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6674F5326F34FF800D15A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWines/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWines;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6674F5526F34FF800D15A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWinesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWinesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VintageWines.app/VintageWines";
+			};
+			name = Debug;
+		};
+		A6674F5626F34FF800D15A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWinesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWinesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VintageWines.app/VintageWines";
+			};
+			name = Release;
+		};
+		A6674F5826F34FF800D15A78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWinesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWinesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VintageWines;
+			};
+			name = Debug;
+		};
+		A6674F5926F34FF800D15A78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GDH4J5F46;
+				INFOPLIST_FILE = VintageWinesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ashgonemad.VintageWinesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VintageWines;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6674F2226F34FF600D15A78 /* Build configuration list for PBXProject "VintageWines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6674F4F26F34FF800D15A78 /* Debug */,
+				A6674F5026F34FF800D15A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6674F5126F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWines" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6674F5226F34FF800D15A78 /* Debug */,
+				A6674F5326F34FF800D15A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6674F5426F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWinesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6674F5526F34FF800D15A78 /* Debug */,
+				A6674F5626F34FF800D15A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6674F5726F34FF800D15A78 /* Build configuration list for PBXNativeTarget "VintageWinesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6674F5826F34FF800D15A78 /* Debug */,
+				A6674F5926F34FF800D15A78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6674F5A26F3502D00D15A78 /* XCRemoteSwiftPackageReference "Networking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashokdy/Networking.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6674F5B26F3502D00D15A78 /* Networking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6674F5A26F3502D00D15A78 /* XCRemoteSwiftPackageReference "Networking" */;
+			productName = Networking;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A6674F1F26F34FF600D15A78 /* Project object */;
+}

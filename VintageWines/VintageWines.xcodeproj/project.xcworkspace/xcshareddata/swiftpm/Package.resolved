@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Networking",
+        "repositoryURL": "https://github.com/ashokdy/Networking.git",
+        "state": {
+          "branch": null,
+          "revision": "b17acc9e0cb18f6b33615fbc7fd5c1899fb7b935",
+          "version": "0.0.9"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
